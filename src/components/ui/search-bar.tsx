@@ -1,13 +1,17 @@
 "use client";
 
 import { ChangeEvent, useRef, useState, useEffect, useCallback } from "react";
+import { handleSelectedProductType } from "@/app/context/homepage-context/homepage-context";
 
 import { cn } from "@/lib/utils";
 import { SearchIcon } from "./icon";
 
 interface SearchBarProps extends React.ComponentProps<"input"> {
+  type?: string;
+  className?: string;
+  id: string;
   suggestions?: string[];
-  onselect?: (data: string) => void;
+  onselect?: handleSelectedProductType;
 }
 
 const SearchBar = ({
@@ -181,4 +185,4 @@ const SearchBar = ({
 
 SearchBar.displayName = "SearchBar";
 
-export { SearchBar };
+export default SearchBar;

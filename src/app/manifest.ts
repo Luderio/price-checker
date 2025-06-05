@@ -2,9 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "NextJS 15 App",
-    short_name: "NextJS15",
-    description: "This application is an app for Next JS 15 tutorial",
+    name: "What's the price of this?",
+    short_name: "PriceChecker",
+    description:
+      "This application enables  price checking of grocery items for proper pricing of goods specialy in Sari-sari stores",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",
@@ -12,17 +13,17 @@ export default function manifest(): MetadataRoute.Manifest {
     orientation: "portrait-primary",
     icons: [
       {
-        src: "/src/app/apple-touch-icon.png",
+        src: "/apple-touch-icon.png",
         sizes: "180x180",
         type: "image/png",
       },
       {
-        src: "/src/app/android-chrome-192x192.png",
+        src: "/android-chrome-192x192.png",
         sizes: "192x192",
         type: "image/png",
       },
       {
-        src: "/src/app/android-chrome-512x512.png",
+        src: "/android-chrome-512x512.png",
         sizes: "512x512",
         type: "image/png",
       },

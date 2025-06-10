@@ -15,7 +15,7 @@ const ServiceWorkerRegister = ({
       window.addEventListener("load", () => {
         // Register the service worker from the root of the public directory
         navigator.serviceWorker
-          .register("/serviceworker.js") // Path is relative to the domain root
+          .register("/public/serviceworker.js") // Path is relative to the domain root
           .then((registration) => {
             console.log(
               "[Service Worker] Registered successfully:",

@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "What's the price of this?",
-  description: "This app tells you the price of the items in Sanchez's Store.",
+  description: "This app tells you the price of the items in Sanchez Store.",
 };
 
 export default function RootLayout({

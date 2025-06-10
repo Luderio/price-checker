@@ -82,11 +82,11 @@ const products = [
   "Algiers",
 ];
 
-export const HomePageContextProvider = ({
+export default function HomePageContextProvider({
   children,
 }: {
   children: ReactNode;
-}) => {
+}) {
   const handleSelectedProduct: handleSelectedProductType = (product_name) => {
     console.log("Selected Product is: ", product_name);
   };
@@ -96,7 +96,7 @@ export const HomePageContextProvider = ({
       {children}
     </HomePageContext.Provider>
   );
-};
+}
 
 export const useHomePageContext = () => {
   const context = useContext(HomePageContext);

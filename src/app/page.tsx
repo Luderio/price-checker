@@ -1,4 +1,4 @@
-import { HomePageContextProvider } from "./context/homepage-context/homepage-context";
+import HomePageContextProvider from "./context/homepage-context/homepage-context";
 import SearchBarComponent from "@/components/homepage-components/SearchBarComponent";
 import { Qrcode } from "@/components/ui/icon";
 

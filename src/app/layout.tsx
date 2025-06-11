@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import ServiceWorkerRegister from "./ServiceWorkerRegister";
+// import ServiceWorkerRegister from "./ServiceWorkerRegister";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
@@ -22,9 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ServiceWorkerRegister>
-        <body className={`${poppins.className} antialiased`}>{children}</body>
-      </ServiceWorkerRegister>
+      {/* <ServiceWorkerRegister> */}
+      <body className={`${poppins.className} antialiased`}>{children}</body>
+      {/* </ServiceWorkerRegister> */}
     </html>
   );
 }

@@ -35,6 +35,7 @@ self.addEventListener("install", (event) => {
 // --- Activate Event ---
 // The service worker is activated when it's the current active worker.
 // This is a good place to clean up old caches.
+
 self.addEventListener("activate", (event) => {
   console.log("[Service Worker] Activating service worker...");
   event.waitUntil(
@@ -57,6 +58,7 @@ self.addEventListener("activate", (event) => {
 
 // --- Fetch Event ---
 // This is the core of the service worker. It intercepts all network requests.
+
 self.addEventListener("fetch", (event) => {
   // Check if the request is for an HTML document (e.g., navigation requests)
   if (event.request.mode === "navigate") {
